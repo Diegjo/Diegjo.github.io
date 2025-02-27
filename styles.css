@@ -184,4 +184,33 @@ body {
 .thumbnail.active {
     opacity: 1;
     border: 2px solid var(--accent-color);
+}
+
+/* Estilos para los botones de navegación */
+.nav-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.nav-btn {
+    padding: 12px 24px;
+    border: 2px solid var(--primary-color);
+    background-color: white;
+    color: var(--primary-color);
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.nav-btn.active {
+    background-color: var(--primary-color);
+    color: white;
 } 
