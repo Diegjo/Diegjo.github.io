@@ -1,0 +1,187 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #34495e;
+    --accent-color: #3498db;
+    --text-color: #333;
+    --light-gray: #f5f6fa;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para la galería de imágenes */
+.imagen-principal {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.galeria-imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Información Principal */
+.info-principal {
+    margin-bottom: 30px;
+}
+
+.info-principal h1 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.precio h2 {
+    color: var(--accent-color);
+    font-size: 24px;
+}
+
+/* Detalles del Inmueble */
+.detalles {
+    background-color: var(--light-gray);
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+}
+
+.detalles h4 {
+    color: var(--primary-color);
+    margin: 25px 0 15px 0;
+    font-size: 1.2em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 8px;
+}
+
+.detalles ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+.detalles li {
+    margin-bottom: 12px;
+    color: var(--text-color);
+}
+
+.descripcion p {
+    line-height: 1.8;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+.descripcion .disclaimer {
+    font-style: italic;
+    color: #666;
+    font-size: 0.9em;
+    margin-top: 20px;
+}
+
+/* Estilos del Carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-item.active {
+    opacity: 1;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 16px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.carousel-control:hover {
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.carousel-indicators {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0 50px;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+.thumbnail {
+    width: 60px;
+    height: 40px;
+    object-fit: cover;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: opacity 0.3s;
+    border-radius: 4px;
+}
+
+.thumbnail.active {
+    opacity: 1;
+    border: 2px solid var(--accent-color);
+} 
