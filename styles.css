@@ -186,31 +186,112 @@ body {
     border: 2px solid var(--accent-color);
 }
 
-/* Estilos para los botones de navegación */
-.nav-buttons {
+/* Nuevos estilos para la sección de detalles */
+.section-title {
+    color: #4A6B8A;
+    font-size: 1.8rem;
+    margin: 30px 0 20px 0;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Estilos para la sección de detalles */
+.detalles-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.detalle-item {
     display: flex;
-    gap: 10px;
-    margin-bottom: 20px;
+    align-items: center;
+    gap: 12px;
+}
+
+.icon-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #4A6B8A;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
     justify-content: center;
-}
-
-.nav-btn {
-    padding: 12px 24px;
-    border: 2px solid var(--primary-color);
-    background-color: white;
-    color: var(--primary-color);
-    border-radius: 4px;
-    cursor: pointer;
+    color: white;
     font-size: 16px;
-    transition: all 0.3s ease;
+    flex-shrink: 0;
 }
 
-.nav-btn:hover {
-    background-color: var(--primary-color);
-    color: white;
+.detalle-info h3 {
+    color: #666;
+    font-size: 0.85rem;
+    margin: 0;
+    font-weight: normal;
+    margin-bottom: 2px;
 }
 
-.nav-btn.active {
-    background-color: var(--primary-color);
-    color: white;
+.detalle-valor {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin: 0;
+    color: #4A6B8A;
+}
+
+/* Estilos para la sección de áreas */
+.areas-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.area-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.area-icon {
+    color: #4A6B8A;
+    font-size: 12px;
+    width: 18px;
+}
+
+.area-text {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Estilos para la sección de equipo */
+.equipo-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.equipo-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.equipo-icon {
+    color: #4A6B8A;
+    font-size: 12px;
+    width: 18px;
+}
+
+.equipo-text {
+    color: #333;
+    font-size: 0.95rem;
+}
+
+/* Responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .detalles-grid,
+    .areas-grid,
+    .equipo-grid {
+        grid-template-columns: 1fr;
+    }
 } 
