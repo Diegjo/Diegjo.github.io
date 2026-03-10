@@ -41,6 +41,4 @@ function toggleDescripcion() {
     document.querySelector('.descripcion').classList.toggle('collapsed');
 }
 
-if (window.innerWidth <= 768) {
-    document.querySelector('.descripcion').classList.add('collapsed');
-}
+document.querySelector('.descripcion').classList.add('collapsed');
