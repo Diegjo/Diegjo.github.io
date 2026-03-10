@@ -35,4 +35,12 @@ function updateSlides() {
 }
 
 // Autoplay opcional
-// setInterval(() => moveSlide(1), 5000); 
+// setInterval(() => moveSlide(1), 5000);
+
+function toggleDescripcion() {
+    document.querySelector('.descripcion').classList.toggle('collapsed');
+}
+
+if (window.innerWidth <= 768) {
+    document.querySelector('.descripcion').classList.add('collapsed');
+}
