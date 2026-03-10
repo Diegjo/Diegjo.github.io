@@ -287,6 +287,19 @@ body {
     font-size: 0.95rem;
 }
 
+.tarjeta-contacto {
+    margin-bottom: 30px;
+}
+
+.tarjeta-contacto-img {
+    display: block;
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
 /* Responsive para dispositivos móviles */
 @media (max-width: 768px) {
     .detalles-grid,
